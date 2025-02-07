@@ -20,6 +20,10 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 - Sets all of the 'Objects.package' files to read only so you can't corrupt them.
 
+- Changes the menus so they just say 'The Sims™ 2'.
+
+- Changes the title screen music and loading text to be the ones from base game.
+
 - Installs dgVoodoo 2 for improved compatibility and performance.
 
 - Installs the 'TS2-Extender' created by [Lazy Duchess](https://www.tumblr.com/lazyduchess).
