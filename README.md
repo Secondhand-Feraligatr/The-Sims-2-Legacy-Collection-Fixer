@@ -2,7 +2,7 @@
 
 
 
-The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issues with Sims™ 2 Legacy Collection. 
+The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issues with The Sims™ 2 Legacy Collection. 
 
 ---
 
