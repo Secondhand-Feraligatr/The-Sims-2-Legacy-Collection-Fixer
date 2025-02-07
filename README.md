@@ -36,7 +36,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 3. **Select** your install location:
    - **Steam** → `C:\Program Files (x86)\Steam\steamapps\common\The Sims 2 Legacy Collection`
    - **EA App** → `C:\Program Files\EA Games\The Sims 2 Legacy Collection`
-   - **Custom Install** → Select your own directory
+   - **Custom Install** → Select the directory manually.
 4. **Click Install** and wait for the process to complete. 
 
 ---
