@@ -1,1 +1,1 @@
-The Sims 2 Legacy Collection Fixer
+**The Sims 2 Legacy Collection Fixe**
