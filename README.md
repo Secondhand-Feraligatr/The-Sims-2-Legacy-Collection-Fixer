@@ -11,12 +11,20 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 ---
 
-## ⚙ **Features**
-✔ Automatically installs fixes and updates for *The Sims 2 Legacy Collection*  
-✔ Supports both **Steam** and **EA App** versions  
-✔ Allows for **custom install locations**  
-✔ Ensures important game files are **set to read-only** to prevent corruption  
-✔ Lightweight and easy to use  
+## **Fixes**
+Installs the IKEA Stuff Pack.
+
+Restores the radio songs cut due to licensing issues.
+
+Fixes an issue where some of the CAS items from the Happy Holidays Stuff Pack are missing.
+
+Sets all of the 'Objects.package' files to read only so you can't corrupt them.
+
+Installs the TS2-Extender created by Lazy Duchess.
+
+**Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.30**) **may be out of date**.
+
+> **Check what the latest version is here:** [TS2 Extender](https://github.com/LazyDuchess/TS2-Extender/releases/tag/0.3.0)
 
 ---
 
