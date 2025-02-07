@@ -24,7 +24,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 - Installs the 'TS2-Extender' created by [Lazy Duchess](https://www.tumblr.com/lazyduchess).
 
-**Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.30**) **may be out of date**.
+**Important Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.30**) **may be out of date**.
 
 > **Check what the latest version is here:** [TS2 Extender](https://github.com/LazyDuchess/TS2-Extender/releases/tag/0.3.0)
 
@@ -41,7 +41,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 ---
 
-## **Important Notes**
+## **Notes**
 - If you have already added the Ikea Stuff Pack to Legacy Collection, then **uninstall** it first so this program works correctly.
 
 - Using the **verfity integrity of game files** option in Steam or EA App will **revert** some of the fixes made by this installer. This happens because it detects the modified game files and replaces them with the vanilla ones. The fixes reverted are the restored radio songs, the 'Objects.package' files being read only, and the missing CAS items from the Happy Holidays Stuff Pack.
