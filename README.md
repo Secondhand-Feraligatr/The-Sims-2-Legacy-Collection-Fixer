@@ -2,13 +2,12 @@
 
 
 
-The **Sims 2 Legacy Collection Fixer** is an automated installer that replaces and modifies files for *The Sims 2 Legacy Collection* to enhance stability and compatibility.
+The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issues with the offical The Sims™ 2 Legacy Collection. 
 
 ---
 
-## 📥 **Download**
-### **Latest Release**
-👉 [Download the Installer](https://github.com/yourusername/yourrepo/releases)
+##  **Download**
+[Download the Installer](https://github.com/yourusername/yourrepo/releases)
 
 ---
 
