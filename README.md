@@ -47,3 +47,13 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 - Using the **verfity integrity of game files** option in Steam or EA App will **revert** some of the fixes made by this installer. This happens because it detects the modified game files and replaces them with the vanilla ones. The fixes reverted are the restored radio songs, the 'Objects.package' files being read only, and the missing CAS items from the Happy Holidays Stuff Pack.
 
 - If you are having issues with dgVoodoo 2 and need to remove it, go to your Legacy Collection install and then open 'TSBin' in the 'EP9' folder. The files you delete are **D3D8.dll**, **D3D9.dll**, **D3DImm.dll**, **DDraw.dll**, **dgVoodoo.conf**, **dgVoodooCpl**.
+
+---
+
+## **Recommended Mods & Programs**
+
+This is all stuff that isn't included in this program, but I highly recommend you go install.
+
+- [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - FIxes an issue where the text is smaller than it should be.
+
+- [Maxis-Match Widescreen CAS Fix](https://modthesims.info/d/681743/maxis-match-widescreen-cas-fix.html) - FIxes an issue where the CAS UI covers your sim when playing on a modern resolution.
