@@ -31,7 +31,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 ---
 
 ## **Use Instructions**
-1. **Download** the installer from the [Releases page](https://github.com/yourusername/yourrepo/releases).  
+1. **Download** the program from the [Releases page](https://github.com/yourusername/yourrepo/releases).  
 2. **Run** the `.exe`.  
 3. **Select** your install location:
    - **Steam** → `C:\Program Files (x86)\Steam\steamapps\common\The Sims 2 Legacy Collection`
