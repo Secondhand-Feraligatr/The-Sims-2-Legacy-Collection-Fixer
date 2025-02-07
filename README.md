@@ -1,9 +1,6 @@
 # The Sims 2 Legacy Collection Fixer
 
-**Version:** 1.0  
-**Author:** CroconawSims  
-**License:** GNU General Public License v3.0  
-**Repository:** [GitHub Repo Link](https://github.com/yourusername/yourrepo)  
+
 
 The **Sims 2 Legacy Collection Fixer** is an automated installer that replaces and modifies files for *The Sims 2 Legacy Collection* to enhance stability and compatibility.
 
