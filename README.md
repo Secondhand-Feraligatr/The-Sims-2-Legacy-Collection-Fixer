@@ -46,7 +46,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 ---
 
 ## **Notes**
-- Using the **verfity integrity of game files** option in Steam or EA App will **revert** some of the fixes made by this installer. This happens because it detects the modified game files and replaces them with the vanilla ones. The fixes reverted are the restored radio songs, the 'Objects.package' files being read only, and the missing CAS items from the Happy Holidays Stuff Pack.
+- Using the **verfity integrity of game files** option in Steam or EA App will **revert** some of the fixes made by this installer. This happens because it detects the modified game files and replaces them with the vanilla ones. The fixes reverted are the restored radio songs, the 'Objects.package' files being read only, the missing CAS items from the Happy Holidays Stuff Pack, the menues saying 'The Sims™ 2', and the base game loading text. You do can use the program again to fix this issue.
 
 - If you are having issues with dgVoodoo 2 and need to remove it, it's located in TSBin in the EP9 folder. The files you delete are **D3D8.dll**, **D3D9.dll**, **D3DImm.dll**, **DDraw.dll**, **dgVoodoo.conf**, **dgVoodooCpl**.
 
