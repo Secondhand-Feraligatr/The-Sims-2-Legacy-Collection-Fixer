@@ -54,6 +54,12 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 This is all stuff that isn't included in this program, but I highly recommend you go install.
 
+- [Sims2Pack Clean Installer](https://modthesims.info/d/409950/sims2pack-clean-installer-v1-6-22-updated-aug-2-2014.html) - Legacy Collection doesn't include the Maxis program needed to install 'Sims2Pack' files, so you can use this Mootilda program instead.
+
 - [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - FIxes an issue where the text is smaller than it should be.
 
 - [Maxis-Match Widescreen CAS Fix](https://modthesims.info/d/681743/maxis-match-widescreen-cas-fix.html) - FIxes an issue where the CAS UI covers your sim when playing on a modern resolution.
+
+- [HoodChecker](https://modthesims.info/d/456523) - Detects and fixes issues with your neighborhoods.
+
+- [No Corrupted Death Memory](http://www.moreawesomethanyou.com/smf/index.php?topic=2368.0) - Fixes an issue where sims can get a corrupted death memory.
