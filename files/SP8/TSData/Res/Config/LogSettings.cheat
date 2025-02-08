@@ -1,0 +1,361 @@
+# in lieu of xml support for log config, the cheats use name-value pairs
+#  in many commands this does not mean they are optional, only that the ordering and parameter type is clear
+# this file can only contain logging cheats
+
+# only display warnings and above across all reporters.  
+# Use with caution.  Logging is shutdown when this is NONE.  Default is ALL.
+#logServiceLevel warning
+
+##-------------------------------------------------------------
+# levels
+#   none, error, warning, always, info, debug, all
+
+##-------------------------------------------------------------
+# presets
+
+# setup a custom formatter presets for sims2
+logPreset     Sims2Custom      "%L %G: %M\n%F\n"
+logPreset     Sims2Verbose     "%L %G: %M\n%F\n"
+logPreset     Sims2Simple      "%G: %M\n"
+logPreset     Sims2Timestamp   "%t %G: %M\n"
+logPreset     Sims2MessageOnly "%M\n"
+logPreset     Sims2TimeLog     "%e: %M\n"
+logPreset     Sims2SingleLine  "{%r,%t,%c,%f,%L,%G,%N},\n"
+logPreset     Sims2Track       "%L %G: %M\n%F\n%R\n"
+# this log preset displays the time delta between successive log messages to a specific reporter
+logPreset     Sims2TimeDelta   "%p %G: %M\n"
+
+
+##-------------------------------------------------------------
+# formatters
+
+# override the default formatter presets
+#  The default formatter is cloned into any new reporter which does not define one.
+logFormatter         Default
+logFormatterPreset   Default             Sims2Simple        all  
+logFormatterPreset   Default             Sims2Verbose       warning  
+logFormatterPreset   Default             Sims2Verbose       error  
+
+
+##-------------------------------------------------------------
+# filters and reporters
+
+# set the default filter.  
+#  The default filter is cloned into any new reporter which does not define one.
+#  Try to avoid adding groups to the default because there is no present command to clear them.
+#
+# Reporters are enabled when created.  If a filter and/or formatter has not previously been defined,
+#   They copy the Default filter and formatter to ones of the same name as the reporter.
+#
+#  AnyGroup - pre  group map filter, rejects messages before map test (simpler to disable filter)
+#  NoGroup  - post group map filter, this is the level use if a group level is not found
+#
+logFilter      Default
+logFilterLevel Default AnyGroup all  
+logFilterLevel Default NoGroup  none    
+
+# create a filter for production messages
+logFormatter         ProductionMessages
+logFormatterPreset   ProductionMessages  Sims2Simple        all   
+
+logFilter      ProductionMessages
+logFilterLevel ProductionMessages Production               all            
+logFilterLevel ProductionMessages MaterialManager          warning     
+logFilterLevel ProductionMessages TextureManager           warning   
+logFilterLevel ProductionMessages LightingManager          warning        
+logFilterLevel ProductionMessages EffectsManager           warning        
+logFilterLevel ProductionMessages ConfigurationManager     warning 
+logFilterLevel ProductionMessages EffectsAction            error  
+logFilterLevel ProductionMessages TSObjectFolder           warning       
+logFilterLevel ProductionMessages CommandParser            error    
+logFilterLevel ProductionMessages LotImposterManager       warning
+logFile        ProductionMessages ProductionMessages.txt
+logReporterProp ProductionMessages -formatter ProductionMessages -filter ProductionMessages
+
+# create the reporter that will use the filter defined above, snapshots the filter 
+logFilter       missing-anim-all
+logFilterLevel  missing-anim-all MissingAnim all 
+logFile         missing-anim-all missing-anim-all.txt 
+logReporterProp missing-anim-all -formatter ProductionMessages -filter missing-anim-all
+
+logFilter       missing-anim-a
+logFilterLevel  missing-anim-a MissingAnim-a all 
+logFile         missing-anim-a missing-anim-a.txt 
+logReporterProp missing-anim-a -formatter ProductionMessages -filter missing-anim-a
+
+logFilter       missing-anim-b
+logFilterLevel  missing-anim-b MissingAnim-b all 
+logFile         missing-anim-b missing-anim-b.txt 
+logReporterProp missing-anim-b -formatter ProductionMessages -filter missing-anim-b
+
+logFilter       missing-anim-c
+logFilterLevel  missing-anim-c MissingAnim-c all 
+logFile         missing-anim-c missing-anim-c.txt 
+logReporterProp missing-anim-c -formatter ProductionMessages -filter missing-anim-c
+
+logFilter       missing-anim-p
+logFilterLevel  missing-anim-p MissingAnim-p all 
+logFile         missing-anim-p missing-anim-p.txt 
+logReporterProp missing-anim-p -formatter ProductionMessages -filter missing-anim-p
+
+logFilter       missing-anim-e
+logFilterLevel  missing-anim-e MissingAnim-e all 
+logFile         missing-anim-e missing-anim-e.txt 
+logReporterProp missing-anim-e -formatter ProductionMessages -filter missing-anim-e
+
+logFilter       missing-anim-o
+logFilterLevel  missing-anim-o MissingAnim-o all 
+logFile         missing-anim-o missing-anim-o.txt 
+logReporterProp missing-anim-o -formatter ProductionMessages -filter missing-anim-o
+
+logFilter       missing-anim-t
+logFilterLevel  missing-anim-t MissingAnim-t all 
+logFile         missing-anim-t missing-anim-t.txt 
+logReporterProp missing-anim-t -formatter ProductionMessages -filter missing-anim-t
+
+# set up a resources log
+logFilter       Resources
+logFilterLevel  Resources ResourceProfile all 
+logFile         Resources resources.txt 
+logReporterProp Resources -formatter ProductionMessages -filter Resources
+
+##-------------------------------------------------------------
+# AppConsole, AppDebugger, and AppTitleBar reporters are defined in the code prior to config file executing
+#  these cannot be created, but can be controlled
+#
+logFormatter         AppConsole   
+logFormatterPreset   AppConsole          Sims2Simple        all   
+logFormatterPreset   AppConsole          Sims2Verbose       warning
+logFormatterPreset   AppConsole          Sims2Verbose       error
+
+logFilter       AppConsole
+logFilterLevel	AppConsole NoGroup   always 
+logReporterProp AppConsole -formatter AppConsole -filter AppConsole
+
+##--------
+# AppDebugger
+logFormatter         AppDebugger   
+logFormatterPreset   AppDebugger         Sims2Simple        all
+logFormatterPreset   AppDebugger         Sims2Verbose       warning
+logFormatterPreset   AppDebugger         Sims2Verbose       error
+
+logFilter	AppDebugger
+logFilterLevel	AppDebugger NoGroup   always 
+logFilterLevel	AppDebugger Sims2Load warning
+logReporterProp AppDebugger -formatter AppDebugger -filter AppDebugger
+
+##--------
+# AppTitleBar
+# AppTitleBar logging is turned off by default because it clobbers the localized title bar name.
+logFormatter         AppTitleBar   
+logFormatterPreset   AppTitleBar         Sims2MessageOnly   all  
+
+logFilter       AppTitleBar
+logFilterLevel	AppTitleBar NoGroup   none 
+logFilterLevel  AppTitleBar Sims2Load info 
+logReporterProp AppTitleBar -formatter AppTitleBar -filter AppTitleBar 
+logReporterProp AppTitleBar -synch true
+logReporterProp AppTitleBar -enabled false
+
+##--------
+# Log files are saved into the log output directory, currently same directory as .exe.
+# Load log records loading messages and times.
+# AppLoadLog is off by default, it is enabled by specifying -loadLog from the command line
+logFormatter         AppLoadLog   
+logFormatterPreset   AppLoadLog          Sims2TimeLog       all   
+
+logFilter       AppLoadLog
+logFilterLevel	AppLoadLog  NoGroup   none 
+logFilterLevel  AppLoadLog  Sims2Load info  
+logFile         AppLoadLog  loadLog.txt
+logReporterProp AppLoadLog -formatter AppLoadLog  -filter AppLoadLog 
+logReporterProp AppLoadLog -enabled false 
+
+# AppSession Logging
+logFormatter         AppSessionLog   
+logFormatterPreset   AppSessionLog   Sims2TimeLog       all   
+
+logFilter       AppSessionLoadLog
+logFilterLevel	 AppSessionLoadLog  NoGroup   none 
+logFilterLevel  AppSessionLoadLog  Sims2Load info  
+logFile         AppSessionLoadLog  sessionLoadLog.txt
+logReporterProp AppSessionLoadLog -formatter AppSessionLog -filter AppSessionLoadLog
+logReporterProp AppSessionLoadLog -enabled false
+
+logFilter       AppSessionSaveLog
+logFilterLevel	 AppSessionSaveLog  NoGroup   none 
+logFilterLevel  AppSessionSaveLog  Sims2Save info  
+logFile         AppSessionSaveLog  sessionSaveLog.txt
+logReporterProp AppSessionSaveLog -formatter AppSessionLog -filter AppSessionSaveLog
+logReporterProp AppSessionSaveLog -enabled false
+
+# AppSessionAllLog is off by default, it is enabled by specifying -sessionLog from the command line
+logFilter       AppSessionAllLog
+logFilterLevel	 AppSessionAllLog  NoGroup   none 
+logFilterLevel  AppSessionAllLog  Sims2Load info  
+logFilterLevel  AppSessionAllLog  Sims2Save info
+logFilterLevel  AppSessionAllLog  Sims2Session info  
+logFile         AppSessionAllLog  sessionLog.txt
+logReporterProp AppSessionAllLog -formatter AppSessionLog -filter AppSessionAllLog
+logReporterProp AppSessionAllLog -enabled false
+
+
+# Turn on the AppDebugger that is disabled in the code
+logReporterProp AppDebugger -enabled true
+
+##-------------------------------------------------------------
+# dump out texture/shader/material related errors to a file
+#
+
+# Robbie runs generate an assert file for display back to the user
+#   this and the other logs should be established in the settings file.
+# These logs should specify a log folder variable which the app replaces?
+logFormatter         EsperAssert
+logFormatterPreset   EsperAssert         Sims2Verbose       all
+
+logFilter       EsperAssert
+logFilterLevel  EsperAssert Assert    error
+logFilterLevel	EsperAssert NoGroup   none 
+logFile         EsperAssert AppAsserts.log  
+logReporterProp EsperAssert -formatter EsperAssert -filter EsperAssert
+
+##--------
+# this is all log and assert level errors (asserts too)
+logFormatter         EsperErrors
+logFormatterPreset   EsperErrors         Sims2Verbose       all
+
+logFilter       EsperErrors
+logFilterLevel	EsperErrors NoGroup   error 
+logFile         EsperErrors AppErrors.log  
+logReporterProp EsperErrors -formatter EsperErrors -filter EsperErrors 
+
+##--------
+# this is all warnings, note the filter lets through error/warning, but the formatter filters out errors
+logFormatter         EsperWarnings
+logFormatterPreset   EsperWarnings       NoPreset           all
+logFormatterPreset   EsperWarnings       Sims2Verbose       warning
+
+logFilter       EsperWarnings
+logFilterLevel	EsperWarnings NoGroup   warning 
+logFile         EsperWarnings AppWarnings.log  
+logReporterProp EsperWarnings -formatter EsperWarnings -filter EsperWarnings 
+
+ 
+##-------------------------------------------------------------
+# dump out texture/shader/material related errors to a file
+#
+LogFormatter       TextureErrors
+LogFormatterPreset TextureErrors Sims2SingleLine all
+
+LogFilter      TextureErrors
+LogFilterLevel TextureErrors TextureManager       warning
+LogFilterLevel TextureErrors "Shader validation"  warning 
+LogFilterLevel TextureErrors MaterialParser       warning
+LogFilterLevel TextureErrors MaterialManager      warning
+
+LogFile        TextureErrors TextureErrors.log
+
+##-------------------------------------------------------------
+# dump out audio related errors to a file
+#
+LogFormatter       AudioErrors
+LogFormatterPreset AudioErrors Sims2SingleLine all
+
+LogFilter      AudioErrors
+LogFilterLevel AudioErrors TSAudio       warning
+
+LogFile        AudioErrors AudioErrors.log
+
+##-------------------------------------------------------------
+# Log graphics specific info
+logPreset            GraphicsLogPreset     "%L %N\n"
+logFormatter         GraphicsLog   
+logFormatterPreset   GraphicsLog      GraphicsLogPreset        all   
+
+logFilter       GraphicsLog
+logFilterLevel  GraphicsLog NoGroup   none 
+logFilterLevel  GraphicsLog GfxDevice info  
+logFile         GraphicsLog GraphicsLog.txt
+logReporterProp GraphicsLog -formatter GraphicsLog -filter GraphicsLog
+logReporterProp GraphicsLog -enabled false 
+
+
+##-------------------------------------------------------------
+# pre-define filters for log windows
+# This code can also define filters and formatters for the logWindow command, when created it will lookup
+#   the filter and formatter for that name.  Closing the window and re-opening it will reuse that filter.
+
+# Performance related filters, create a reporter in startup cheat or via command propt
+#   example cheat:  logWindow PerformanceAverageTimings 
+#
+logFilter          PerformanceAverageTimings
+logFilterLevel     PerformanceAverageTimings PerformanceAverageTimings all
+logFormatter       PerformanceAverageTimings
+logFormatterPreset PerformanceAverageTimings Sims2MessageOnly all
+
+logFilter          PerformancePeakTimings
+logFilterLevel     PerformancePeakTimings PerformancePeakTimings all
+logFormatter       PerformancePeakTimings
+logFormatterPreset PerformancePeakTimings Sims2MessageOnly all
+
+logFilter          PerformanceSlowFrames
+logFilterLevel     PerformanceSlowFrames PerformanceSlowFrames all
+logFormatter       PerformanceSlowFrames
+logFormatterPreset PerformanceSlowFrames Sims2MessageOnly all
+
+logFilter          PerformanceAll
+logFilterLevel     PerformanceAll PerformanceAverageTimings all
+logFilterLevel     PerformanceAll PerformancePeakTimings    all
+logFilterLevel     PerformanceAll PerformanceSlowFrames     all
+logFilterLevel     PerformanceAll PerformanceAverageStats   all
+logFormatter       PerformanceAll
+logFormatterPreset PerformanceAll Sims2MessageOnly all
+
+# Animation cache filters and reporters 
+logFilter          AnimCache
+logFilterLevel     AnimCache AnimCache all
+logFormatter       AnimCache
+logFormatterPreset AnimCache Sims2MessageOnly all
+
+logFilter          AnimCacheStats
+logFilterLevel     AnimCacheStats AnimCacheStats all
+logFormatter       AnimCacheStats
+logFormatterPreset AnimCacheStats Sims2MessageOnly all
+
+logFilter          AnimCacheAll
+logFilterLevel     AnimCacheAll AnimCache all
+logFilterLevel     AnimCacheAll AnimCacheStats    all
+logFormatter       AnimCacheAll
+logFormatterPreset AnimCacheAll Sims2MessageOnly all
+
+# SimResource cache filters and reporters
+logFilter          SimResource
+logFilterLevel     SimResource SimResource all
+logFormatter       SimResource
+logFormatterPreset SimResource Sims2Timestamp all
+
+# SimResource cache filters and reporters
+logFilter          Materials
+logFilterLevel     Materials MaterialParser all
+logFilterLevel     Materials MaterialManager all
+logFormatter       Materials
+logFormatterPreset Materials Sims2Timestamp all
+
+
+
+
+##-------------------------------------------------------------
+
+# Don't display MissingAnim messages in any of the App reporters.  
+#  This has to be done after App reporters have been defined.
+logFilterLevel App* MissingAnim   none 
+logFilterLevel App* MissingAnim-a none 
+logFilterLevel App* MissingAnim-b none 
+logFilterLevel App* MissingAnim-c none 
+logFilterLevel App* MissingAnim-t none 
+logFilterLevel App* MissingAnim-e none 
+logFilterLevel App* MissingAnim-p none 
+logFilterLevel App* MissingAnim-o none 
+
+
+

@@ -1,0 +1,15 @@
+#
+# Sims2 global startup cheat file - this file is run on startup of the game application.  It's meant to reflect "production defaults".
+#
+# Do not modify this file locally -- instead create UserData/userStartup.cheat and modify that.
+#
+
+#--------------------------------------------------------------------------------------------
+#     alias         real command                                    brief help                         full help
+#     ------------- ----------------------------------------------- ---------------------------------- --------------------------------
+alias exit          hide                                            "Hide the cheat console window"    "Hide the cheat console window"
+alias x             expand                                          "*Expand the cheat console window" "Hide the cheat console window"
+alias h             help                                            "*Show the cheat help"             "Show the cheat help"
+alias ?             help                                            "*Show the cheat help"             "Show the cheat help"
+
+#--------------------------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+# Camera Configuration File
+# all angles in degrees
+# all linear measurements in game units
+# all indices start from zero except camera index, 
+#   which corresponds to the key you press to activate
+#   the desired camera (thus, '1' is the first camera)
+
+# Acceptable controller types are "SmoothSims1", "sims2lot", "Neighborhood", "Mouse", and "Maya" (without quotes)
+# "sims2lot" is the in game camera use when on a lot.
+# "neighborhood" is the camera use when in the neighborhood view.
+
+# usage: for each camera...
+# camera      <identifierString> <controllerType>
+
+# If controllerType is SmoothSims1, the following controller parameters can be defined:
+# zoom        <defaultZoomLevelIndex> (horizontal distances) [(FOVs) (near clip distances) (far clip distances) (min camera pitch angles) (max camera pitch angles)]
+# fov         (field of views)
+# clip        (near clip distances) (far clip distances)
+# orientation <defaultOrientationIndex> (yaw angles)
+# smoothing   <zoom duration> <spin duration>
+#   where the smaller the duration (must be an integer >= 1) the more abrupt the transition
+# slope       <slope value>
+#   where slope value is the (positive) ratio dy/dx (change in y per unit change in x)
+#   this value is only used if no min/max camera pitch angles are specified for the zoom command
+# wheel       <wheel scaling>
+#   where wheel scaling is a multiplier that determines how quickly the zoom level adjusts in response to the mouse wheel
+
+# If controllerType is Mouse or Maya, there are no user-settable parameters. The camera definition then 
+# consists solely of the line which contains the identifier string and controller type.
+
+version 1
+
+# any locally-supplied cameras.
+sinclude "userCameras.txt"
+
+include "LiveCamera.txt"
+include "BuildCamera.txt"
+include "NeighborhoodCamera.txt"
+include "PreRenderCamera.txt"
+include "CASCamera.txt"
+include "SnapshotCamera.txt"
+include "LotSnapshotCamera.txt"
+include "FirstPersonCameras.txt"
+include "CineCamCamera.txt"

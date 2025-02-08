@@ -1,0 +1,109 @@
+# fencearches.txt -- fence arch products
+#
+# NOTE: A fence arch is a type of partition, and therefore is referred to
+#       as a partition in the comments for those settings that are generic
+#       to all partitions.
+#
+# NOTE: The IDs here are in the same number space as the IDs in
+#       fences.txt and walls.txt.  Make sure there are no duplicates 
+#       within or between these files.
+#
+# NOTE: IDs must be less than 255.
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# fenceArch X
+#   used to start a new block for a fence arch product.  Specifies the ID
+#   the game uses internally to refer to this fence arch.
+#
+# archCenterModel "XXXXX"
+#   the name of the 3D resource representing the center part of
+#   the fence arch stretching between posts one game unit apart.
+#
+# archEastModel "XXXXX"
+#   the name of the 3D resource representing the arch part 
+#   hanging on east side of the support post
+#
+# archWestModel "XXXXX"
+#   the name of the 3D resource representing the arch part 
+#   hanging on west side of the support post
+#
+# archPostModel "XXXXX"
+#   the name of the 3D resource representing the vertical part of
+#   the fence arch
+#
+# mayChangeSurface [true|false] (default: false)
+#   whether or not the user is allowed to change the surface treatment after creation.
+#
+# mayAttachObjects [true|false] (default: false)
+#   whether or not it is allowed to attach objects to this partition style.
+#
+# mayCutAway [true|false] (default: false)
+#   whether or not wall cutaway mode affects this partition style.
+#
+# requiresFlatBottom [true|false] (default: true)
+#   whether or not this partition has a level bottom (that must remain level).
+#
+# requiresFlatTop [true|false] (default: false)
+#   whether or not this partition has a level top (that must remain level).
+#
+# submersible [true|false] (default: false)
+#   whether or not this partition can be placed in water.
+#
+# mayPlaceDiagonally [true|false] (default: false)
+#   whether or not this partition supports placement diagonally across a tile
+#   (as opposed to along a tile edge).
+#
+# verticalSpan [floorToFloor|floorToRoof|fixedHeight|floorToFloorBasedCeiling] (default: fixedHeight)
+#   how to determine the top of the partition when rendering it.
+#   ("floorToFloorBasedCeiling" differs from "floorToFloor" by having its top
+#    level with the bottom of the floor thickness geometry on the level above,
+#    rather than level with the floor above)
+#
+# blocksPlacement [true|false] (default: false)
+#   whether or not this partition affects placement of objects and routing on
+#   the same level as the partition.
+#
+# bearsLoad [true|false] (default: false)
+#   whether or not this partition supports objects or build mode items on the
+#   level above it.
+#
+# blocksLight [true|false] (default: false)
+#   whether or not this partition prevents light (and sound) from passing through it.
+#
+# hasLightMap [true| false] (default: false)
+#   whether or not this partition should have a light map applied to and calculated for it.
+#
+# notRendered
+#   the graphics system will not render this partition.
+#
+# deleteTool [partition|roof|levelRoom|modularStairs] (default: partition)
+#   says which user tool is allowed to delete this type of partition 
+#   (only one tool allowed per product)
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet 
+#   to find the descriptive text for the catalog item
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 143
+
+buildTipIndex 27

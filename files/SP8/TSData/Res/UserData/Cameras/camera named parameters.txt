@@ -1,0 +1,50 @@
+
+-------------------------------------------------------------------------------
+First person controller only
+
+mouseheadingsensitivity                  - How sensitive the mouse is when looking around in first person mode.
+mousepitchsensitivity                    - Same as above but for pitch.
+maxvelocity				 - The desired velocity set when moving in a direction. Lerps towards.
+orientationminchange			 - Lerp smallest change when orienting camera.
+orientationsteps                         - Lerp number of steps to take when orienting camera.
+translationminchange			 - Lerp smallest change when moving camera.
+translationsteps                         - Lerp number of steps to take when moving camera.
+velocityminchange                        - Lerp smallest change in velocity when lerping towards max velocity.
+velocitysteps                            - Lerp number of steps to take when moving towards max velocity.
+fovminchange                             - Lerp smallest change when setting field of view.
+fovsteps                                 - Lerp number of steps to take when setting fov.
+upperpitchlimit                          - How far up you can look in degrees off of horizontal. 0 means no limit.
+lowerpitchlimit                          - How far down you can look in degrees off of horizontal. 0 means no limit.
+headinglimit                             - How far left or right you can look off dead ahead in degrees. 0 means no limit.
+
+
+-------------------------------------------------------------------------------
+Smooth sims1 controller only
+
+keyboardrotationspeed                    - Lerp how fast the scene rotates.
+keyboardrotationlerpsteps		 - Lerp number of steps to take when rotating to new rotation.
+keyboardrotationlerpminchange		 - Lerp smallest change possible when rotating to new rotation.
+keyboardtranslationspeed                 - Lerp how fast the camera moves.
+keyboardtranslationlerpsteps             - Lerp number of steps to take moving to new location.
+keyboardtranslationlerpminchange         - Lerp smallest change possible when moving to new location.
+
+
+-------------------------------------------------------------------------------
+Create a sim controller only
+
+minzoom					 - How far away from default location. (bone location) the camera can zoom. Negative values are allowed.
+maxzoom                                  - How far in the camera can zoom. Same rules as above.
+zoomheading                              - Angle in degrees left off forward that the camera zooms towards.
+zoomelevation                            - Angle in degrees up off forward that the camera zooms towards.
+zoomenable                               - Enables/Disables zoom. 0 = disable, any other number enables.
+lerptostart                              - If 0, then camera desired and current values are set to the same, and no lerping will occur from last controller position.
+mousewheelsensitivity                    - How much the mouse wheel moves the camera when zooming.
+
+
+-------------------------------------------------------------------------------
+Live camera only
+
+subjectheightlerpsteps                   - Lerp number of steps to take when adjusting the subject height. (point that the camera is looking at on a sim)
+subjectheightlerpminchange               - Lerp smallest change possible when changing the subject height.
+subjectheightslack                       - Amount of slack in world space units to allow before changing the subject height. (How much a sim can change height before the camera adjusts)
+   

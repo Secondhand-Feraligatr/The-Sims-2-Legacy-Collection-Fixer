@@ -1,0 +1,59 @@
+# awnings.txt -- fence arch products
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# awning X
+#   used to start a new block for a fence arch product.  Specifies the ID
+#   the game uses internally to refer to this fence arch.
+#
+# QCrossModel "XXXXX"
+#   the name of the 3D resource representing the QCross part of the awning
+# QExtModel "XXXXX"
+#   the name of the 3D resource representing the QExt part of the awning
+# QTModel "XXXXX"
+#   the name of the 3D resource representing the QT part of the awning
+# QCapModel "XXXXX"
+#   the name of the 3D resource representing the QCap part of the awning
+# HCrossModel "XXXXX"
+#   the name of the 3D resource representing the HCross part of the awning
+# HExtModel "XXXXX"
+#   the name of the 3D resource representing the HExt part of the awning
+# HTModel "XXXXX"
+#   the name of the 3D resource representing the HT part of the awning
+# HCapModel "XXXXX"
+#   the name of the 3D resource representing the HCap part of the awning
+# HCornerModel "XXXXX"
+#   the name of the 3D resource representing the HCorner part of the awning
+# TileModel "XXXXX"
+#   the name of the 3D resource representing the Tile part of the awning
+# PoleModel "XXXXX"
+#   the name of the 3D resource representing the Tile part of the awning
+#
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet 
+#   to find the descriptive text for the catalog item
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 300
+
+buildTipIndex 28
+

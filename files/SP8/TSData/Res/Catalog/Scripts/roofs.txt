@@ -1,0 +1,64 @@
+# roofs.txt -- roofs with engine-generated geometry
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# roof X
+#   used to start a new block for a roof product.  Specifies the ID
+#   the game uses internally to refer to this roof type.
+#
+# defaultRoofPattern "XXXXX"
+#   the name of the roofPattern applied to this roof when it is first created.
+#
+# roofFloorPattern "XXXXX"
+#   the name of the floor pattern for this roof when it is first created.Only relevant to mansard roofs
+#
+#
+# roofSlope X
+# Where slope is a floating point number
+# 
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 140
+
+# Roofs
+
+buildTipIndex 15
+
+roof 18
+defaultRoofPattern "roof-ui-gable"
+thumbnailResource 0x499db772 0xe9261566
+catalogTextIndex 22
+
+roof 19
+defaultRoofPattern "roof-ui-gable-tall"
+thumbnailResource 0x499db772 0xe9261561
+catalogTextIndex 23
+
+roof 20
+defaultRoofPattern "roof-ui-hipped"
+thumbnailResource 0x499db772 0xe9261571
+catalogTextIndex 24
+
+roof 21
+defaultRoofPattern "roof-ui-gable-shed"
+thumbnailResource 0x499db772 0xe9261581
+catalogTextIndex 20
+
+roof 22
+defaultRoofPattern "roof-ui-hipped-shed"
+thumbnailResource 0x499db772 0xe9261586
+catalogTextIndex 21

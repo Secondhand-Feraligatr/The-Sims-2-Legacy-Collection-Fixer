@@ -1,0 +1,341 @@
+# Camera configuration file for Create a Sim
+# See cameras.txt for a description of syntax.
+
+#camera "CAS" Live
+#
+#zoom        1 (68.0 49.0 28.0 18.3 1.0)
+#fov           (32.2 28.6 23.0 22.3 21.8)
+#clip          (25 25 15 10 0.1)             (500 500 500 500 500)
+#pitch         (30 26 22.5 19 15)          (40 45 50 55 60)
+#
+#orientation 1 (10 55 100 145 190 235 280 325)
+#smoothing   7 8
+#slope       0.7
+#wheel       1.5
+
+
+# Camera used in create a sim
+camera     "CAS" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0
+   setparam minzoom                 0
+   setparam zoomheading             0
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.08
+   setparam keyboardzoomspeed       0.08
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_Family" CreateASim
+fov        30
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 2
+   setparam minzoom                 -1.6
+   setparam zoomheading             0
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0
+   setparam interpolatespeedfrom    0
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_ClothesAdult" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 2.3
+   setparam minzoom                 0
+   setparam zoomheading             8
+   setparam zoomelevation           -17
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_ClothesChild" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 1.75
+   setparam minzoom                 0
+   setparam zoomheading             9
+   setparam zoomelevation           -17
+   setparam interpolatespeedto      0.15
+   setparam interpolatespeedfrom    0.15
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_ClothesTeen" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 2
+   setparam minzoom                 0
+   setparam zoomheading             8
+   setparam zoomelevation           -17
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_ClothesToddler" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 .6
+   setparam minzoom                 -.2
+   setparam zoomheading             16
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0.2
+   setparam interpolatespeedfrom    .4
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_FaceAdult" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.15
+   setparam minzoom                 -0.13
+   setparam zoomheading             13
+   setparam zoomelevation          -14
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.15
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_FaceChild" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.05
+   setparam minzoom                 -.2
+   setparam zoomheading             8
+   setparam zoomelevation           -10
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.15
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_FaceTeen" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.15
+   setparam minzoom                 -0.12
+   setparam zoomheading             13
+   setparam zoomelevation           -12
+   setparam interpolatespeedto      0.1
+   setparam interpolatespeedfrom    0.15
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+
+# Camera used in create a sim
+camera     "CAS_FaceToddler" CreateASim
+fov        54
+clip       0.1 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.07
+   setparam minzoom                 -.13
+   setparam zoomheading             10
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0.01
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+# Camera used in create a sim with zoom disabled
+camera     "CAS_FaceLargeDog" CreateASim
+fov        54
+clip       0.1 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.4
+   setparam minzoom                 -.13
+   setparam zoomheading             8
+   setparam zoomelevation           -2
+   setparam interpolatespeedto      0.01
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+# Camera used in create a sim with zoom disabled
+camera     "CAS_ClothesLargeDog" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 .7
+   setparam minzoom                 -.5
+   setparam zoomheading             9
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0.2
+   setparam interpolatespeedfrom    .4
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+# Camera used in create a sim with zoom disabled
+camera     "CAS_FaceSmallDog" CreateASim
+fov        54
+clip       0.1 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0.425
+   setparam minzoom                 .175
+   setparam zoomheading             9
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0.01
+   setparam interpolatespeedfrom    0.1
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+# Camera used in create a sim with zoom disabled
+camera     "CAS_ClothesSmallDog" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 .475
+   setparam minzoom                 -.15
+   setparam zoomheading             10
+   setparam zoomelevation           4
+   setparam interpolatespeedto      0.2
+   setparam interpolatespeedfrom    .4
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+# Camera used in create a sim with zoom disabled
+camera     "CAS_ZoomDisabled" CreateASim
+fov        54
+clip       0.2 2000
+smoothing  7 8
+if (maxVersion() >= 3)
+   setparam defaultminchange        0.01
+   setparam translationminchange    0.01
+   setparam translationsteps        7
+   setparam orientationminchange    0.01
+   setparam orientationsteps        7
+   setparam maxzoom                 0
+   setparam minzoom                 0
+   setparam zoomheading             0
+   setparam zoomelevation           0
+   setparam interpolatespeedto      0
+   setparam interpolatespeedfrom    0
+   setparam mousewheelsensitivity   0.05
+   setparam keyboardzoomspeed       0.05
+endif
+
+

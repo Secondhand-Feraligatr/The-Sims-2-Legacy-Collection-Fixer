@@ -1,0 +1,139 @@
+# walls.txt -- walls with engine-generated geometry
+#
+# NOTE: A wall is a type of partition, and therefore is referred to
+#       as a partition in the comments for those settings that are generic
+#       to all partitions.
+#
+# NOTE: The IDs here are in the same number space as the IDs in
+#       fences.txt and fenceArches.txt.  Make sure there are no duplicates 
+#       within or between these files.
+#
+# NOTE: IDs must be less than 255.
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# wall X  (required)
+#   used to start a new block for a wall product.  Specifies the ID
+#   the game uses internally to refer to this wall type.
+#
+# defaultPattern "XXXXX"  (required)
+#   the name of the wallPattern applied to this wall when it is first created.
+#
+# wallThickness [standard|none] (default: standard)
+#   the thickness category of this wall.
+#
+# mayChangeSurface [true|false] (default: true)
+#   whether or not the user is allowed to change the surface treatment after creation.
+#
+# mayAttachObjects [true|false] (default: true)
+#   whether or not it is allowed to attach objects to this partition style.
+#
+# mayCutAway [true|false] (default: true)
+#   whether or not wall cutaway mode affects this partition style.
+#
+# requiresFlatBottom [true|false] (default: true)
+#   whether or not this partition has a level bottom (that must remain level).
+#
+# requiresFlatTop [true|false] (default: true)
+#   whether or not this partition has a level top (that must remain level).
+#
+# submersible [true|false] (default: true)
+#   whether or not this partition can be placed in water.
+#
+# mayPlaceDiagonally [true|false] (default: true)
+#   whether or not this partition supports placement diagonally across a tile
+#   (as opposed to along a tile edge).
+#
+# verticalSpan [floorToFloor|floorToRoof|fixedHeight|floorToFloorBasedCeiling] (default: floorToFloor)
+#   how to determine the top of the partition when rendering it.
+#   ("floorToFloorBasedCeiling" differs from "floorToFloor" by having its top
+#    level with the bottom of the floor thickness geometry on the level above,
+#    rather than level with the floor above)
+#
+# blocksPlacement [true|false] (default: true)
+#   whether or not this partition affects placement of objects and routing on
+#   the same level as the partition.
+#
+# bearsLoad [true|false] (default: true)
+#   whether or not this partition supports objects or build mode items on the
+#   level above it.
+#
+# blocksLight [true|false] (default: true)
+#   whether or not this partition prevents light (and sound) from passing through it.
+#
+# hasLightMap [true| false] (default: true)
+#   whether or not this partition should have a light map applied to and calculated for it.
+#
+# notRendered
+#   the graphics system will not render this partition.
+#
+# deleteTool [partition|roof|levelRoom|modularStairs] (default allows any tool to delete)
+#   says which user tool is allowed to delete this type of partition 
+#   (only one tool allowed per product)
+#
+# requiresSupportUnderneath [true|false]
+#   whether or not this partition needs to be placed on top of a structure, floor, or terrain.
+#
+# thumbnailResource x y
+#   group and instance id (in hex) of the thumbnail resource representing this
+#   product in the catalog.
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet
+#   to find the descriptive text for the catalog item
+#
+# buildTipIndices x ...
+#   the indices of the strings in the build tip stringset
+#   that contain the build/decorating tip text that will be
+#   appended to the catalog description of each clone of the following entries. 
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+#
+# invisibleLightBlocking
+#   make a wall invisible but light blocking
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 129
+
+buildTipIndices 2 3
+
+wall 1
+defaultPattern "blank"
+wallThickness standard
+mayChangeSurface true
+mayAttachObjects true
+mayCutAway true
+requiresFlatBottom true
+requiresFlatTop true
+submersible false
+deleteTool partition
+thumbnailResource 0 0x499db772 0xe9261348
+thumbnailResource 1 0x499db772 0xe9261347
+thumbnailResource 2 0x499db772 0xfeed5515
+thumbnailResource 3 0x499db772 0xfeed5510
+catalogTextIndices 0 1 2 3
+
+wall 301
+defaultPattern "wall_screenWood"
+wallThickness standard
+mayChangeSurface true
+mayAttachObjects false
+mayCutAway false
+requiresFlatBottom true
+requiresFlatTop false
+submersible false
+deleteTool levelRoom
+bearsLoad false
+blocksLight false
+stageWall
+notInCatalog

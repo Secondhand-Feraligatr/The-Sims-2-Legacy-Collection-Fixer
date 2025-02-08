@@ -1,0 +1,54 @@
+# Camera configuration file for Live mode.
+# See cameras.txt for a description of syntax.
+
+#	North
+camera "LotSnapshot_N_0" SmoothSims1
+
+zoom        0 (50.0)
+fov           (32.2)
+clip          (6) (5000)
+pitch         (30) (40)
+
+orientation 0 (270)
+smoothing   7 8
+slope       0.7
+wheel       1.5
+
+#	South
+camera "LotSnapshot_S_0" SmoothSims1
+
+zoom        0 (50.0)
+fov           (32.2)
+clip          (6) (5000)
+pitch         (30) (40)
+
+orientation 0 (90)
+smoothing   7 8
+slope       0.7
+wheel       1.5
+
+#	East
+camera "LotSnapshot_E_0" SmoothSims1
+
+zoom        0 (50.0)
+fov           (32.2)
+clip          (6) (5000)
+pitch         (30) (40)
+
+orientation 0 (0)
+smoothing   7 8
+slope       0.7
+wheel       1.5
+
+#	West
+camera "LotSnapshot_W_0" SmoothSims1
+
+zoom        0 (50.0)
+fov           (32.2)
+clip          (6) (5000)
+pitch         (30) (40)
+
+orientation 0 (180)
+smoothing   7 8
+slope       0.7
+wheel       1.5

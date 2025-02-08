@@ -1,0 +1,94 @@
+# deckfoundations.txt -- decks and foundations
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# deck X
+#   used to start a new block for a deck product.  Specifies the 
+#   integer ID the game uses internally to refer to this product.
+#
+# foundation X
+#   used to start a new block for a foundation product.  Specifies the 
+#   integer ID the game uses internally to refer to this product.
+#
+# pool X
+#   used to start a new block for a pool product.  Specifies the 
+#   integer ID the game uses internally to refer to this product.
+#
+# stage X
+#    used to start a new block for a stage product.
+#
+# wallStyle X
+#   the integer ID of the wall style used to define the border of the
+#   area below the deck/foundation.
+#
+# floorPattern "XXXXX"
+#   the name of the floorPattern which constitutes the top surface of
+#   the deck/foundation.
+#
+# supportObject 0xHHHHHHHH
+#   the GUID (in 32-bit hexadecimal) of the selector for the object representing 
+#   a column supporting a deck at terrain level from below.
+#
+# supportObjectUpperLevel 0xHHHHHHHH
+#   the GUID (in 32-bit hexadecimal) of the selector for the object representing 
+#   a column supporting a deck above terrain level from below.
+#
+# supportLayout [-floodfill] [-edgefill] [-corners] [-spacing n]
+#   the layout pattern for supports.  
+#   "floodfill" means the interior of the deck/foundation will be filled with supports
+#   "edgefill" means the edges of the deck/foundation will be lined with supports
+#   "corners" means each corner of the deck/foundation will have a support
+#   "spacing" specifies how many tiles between supports (default is 1).
+#   0 = no supports, 1 = every tile, 2 = every other tile, etc.
+#   floodfill and edgefill are independent and combinable.
+#   if none of floodfill, edgefill, or corners is specified, no supports will be placed.
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextResource 
+#   to find the descriptive text for the catalog item
+#
+# buildTipIndices x ...
+#   the indices of the strings in the build tip stringset
+#   that contain the build/decorating tip text that will be
+#   appended to the catalog description of each clone of the following entries. 
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+
+
+version 2
+
+ignoreErrors true
+
+catalogTextResource build 138
+
+# Foundations
+
+buildTipIndices 4 4
+
+
+# Decks
+
+buildTipIndices 5 5
+
+
+
+# Pools
+
+buildTipIndices 23 23
+
+# Stages
+buildTipIndices 29 29
+
+stage 4
+wallStyle 301
+floorPattern "loftSmallBirchPlanks"
+catalogTextIndices 7 8 
+
+

@@ -1,0 +1,49 @@
+# roofPatterns.txt -- roof Pattern products
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# roofPattern X
+#   used to start a new block for a fence product.  Specifies the ID
+#   the game uses internally to refer to this fence.
+#
+# rooftop "XXXXX"
+#   the name of the texture for top part of roof 
+#
+# rooftopbump "XXXXX"
+#   the name of the bump texture for top part of roof 
+# mayUseBump [true|false]
+#   set it to true to view the bump map
+#
+# roofunder "XXXXX"
+#   the name of the texture for under part of roof 
+#
+# roofedges "XXXXX"
+#   the name of the texture for edges of roof 
+#
+# rooflowerstip "XXXXX"
+#   the name of the texture for lower strip of roof 
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet 
+#   to find the descriptive text for the catalog item
+#
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 141
+
+buildTipIndex 17
+
