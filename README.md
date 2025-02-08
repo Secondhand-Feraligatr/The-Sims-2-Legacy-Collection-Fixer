@@ -24,6 +24,8 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 
 - Changes the title screen music and loading text to be the ones from base game.
 
+- Installs [dgVoodoo2](https://github.com/dege-diosg/dgVoodoo2) and [dxvk](https://github.com/doitsujin/dxvk) to improve compatiblity and performance. 
+
 - Installs the 'TS2-Extender' created by [Lazy Duchess](https://www.tumblr.com/lazyduchess).
 
 **Important Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.30**) **may be out of date**.
