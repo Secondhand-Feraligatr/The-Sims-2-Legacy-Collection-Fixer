@@ -7,7 +7,7 @@ The **Sims 2 Legacy Collection Fixer** is a program that fixes some of the issue
 ---
 
 ##  **Download**
-[Latest Release](https://github.com/yourusername/yourrepo/releases)
+[Latest Release](https://github.com/Secondhand-Feraligatr/The-Sims-2-Legacy-Collection-Fixer/releases/tag/v1.0.0)
 
 ---
 
