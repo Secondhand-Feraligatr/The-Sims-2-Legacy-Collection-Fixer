@@ -1,0 +1,21 @@
+# File to specify levels at which various LODs should be used.
+#
+# Syntax: LOD <lod number, 1-30> <screen size of object>
+#
+# The screen size is the larger of the horizontal and vertical sizes of the object on the screen.
+# If the object does not have the specific LOD listed here, the next higher LOD is used.
+# No interpolation is done between the LODs listed in this file. This allows using only as 
+# many LODs as needed e.g. on a low-end machine an "aggressive" use of LODs might
+# list all 30 levels possible; on a high-end machine only 1 or 2 levels may be necessary.
+# A future enhancement is to support such machine-specific specification of LODs e.g.
+# with -aggressive, -moderate switches on the LOD command.
+
+LOD  0 600
+LOD  1 500
+LOD  2 450
+LOD  3 400
+LOD  4 350
+LOD  5 300
+LOD 15 250
+LOD 20 200
+LOD 30 100

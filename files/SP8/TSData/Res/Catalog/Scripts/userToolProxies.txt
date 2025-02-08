@@ -1,0 +1,30 @@
+# userToolProxies 
+#
+# A catalog product proxy for user tools that don't have a proper product representation.
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# userToolProxy X
+#   used to start a new block for a user tool proxy product.  Specifies the class id of the
+#   user tool.
+#
+# thumbnailResource x y
+#   group and instance id of the thumbnail to represent the tool in the catalog.
+#
+
+
+version 1
+
+ignoreErrors true
+
+

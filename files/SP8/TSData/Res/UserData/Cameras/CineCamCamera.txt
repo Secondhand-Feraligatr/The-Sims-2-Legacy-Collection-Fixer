@@ -1,0 +1,15 @@
+##################################################
+# Camera configuration file for CineCam mode.
+#
+
+camera "Animated" 
+   type Animated
+
+   clip 0.1 1000
+
+   # object fade.
+   setparam objectFadeDistance    1
+   setparam objectFadeFalloff     2
+   setparam objectFadeAllObjects  0
+   setparam objectFadeCineCam     1
+end

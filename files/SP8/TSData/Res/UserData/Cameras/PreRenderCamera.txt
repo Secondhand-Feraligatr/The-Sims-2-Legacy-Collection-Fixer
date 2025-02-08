@@ -1,0 +1,12 @@
+# Camera configuration file for Build mode.
+# See cameras.txt for a description of syntax.
+
+camera      "Prerender" SmoothSims1
+zoom        0 (2000)
+fov           (130.0)
+pitch         (85)   (85)
+clip          ( 1) (5000)
+
+orientation 0 (0)
+smoothing   1 1
+slope       2

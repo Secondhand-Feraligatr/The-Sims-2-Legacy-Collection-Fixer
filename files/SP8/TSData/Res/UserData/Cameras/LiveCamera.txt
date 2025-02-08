@@ -1,0 +1,52 @@
+
+# Camera configuration file for Live mode.
+# See cameras.txt for a description of syntax.
+
+# The following named parameters are available with the "Live" camera.
+#
+# subjectheightlerpsteps          - Number of steps to interpolate over when adjusting the subject height.
+# subjectheightlerpminchange      - Smallest step taken when doing the above.
+# pivotheightabovefloor           - Height of the camera pivot above the floor. Should match the root_trans node height of a person.
+# constraintwidth                 - Width added to lot rectangle to constrain camera. Negative values allowed.
+# defaultcamerapitch              - When entering a lot and centering on a sim, the camera assumes this pitch.
+
+camera "Live" Live
+zoom        1 (70   40   25   15    8     3)
+fov           (45   45   45   45    45    45)
+pitch         (30   22   14   10    6     2)   (40  45  50  55  60  65)
+clip          (1.0  0.8  0.6  0.4   0.2   0.1) (2000 2000 2000 2000 2000 2000)
+
+orientation 1 (10 55 100 145 190 235 280 325)
+
+smoothing   5 8
+slope       0.7
+wheel       5
+
+setparam defaultminchange                  0.02
+
+setparam keyboardrotationspeed             200
+setparam keyboardrotationlerpsteps         1
+setparam keyboardrotationlerpminchange     0.5
+
+setparam keyboardtranslationspeed          50
+setparam keyboardtranslationlerpsteps      1
+setparam keyboardtranslationlerpminchange  0.001
+
+setparam keyboardzoomspeed                 1
+setparam keyboardzoomlerpsteps             1
+setparam keyboardzoomlerpminchange         1
+setparam keyboardzoomscale                 2
+
+setparam pivotheightabovefloor             1
+setparam constraintwidth                   -10
+setparam subjecttrackingdeadzonemagnitude  30
+
+setparam cornersampleoffset          1
+setparam cornersampleratio           0.5
+setparam floorheightsamplerange      6
+setparam floorheightsampleinnerrange 2
+
+setparam objectFadeDistance    10
+setparam objectFadeFalloff     4
+setparam objectFadeAllObjects  0
+setparam objectFadeCineCam     0

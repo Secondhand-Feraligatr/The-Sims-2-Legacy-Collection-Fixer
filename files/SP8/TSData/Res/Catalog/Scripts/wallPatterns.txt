@@ -1,0 +1,45 @@
+# wallPatterns.txt
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# wallPattern "XXXXX"
+#   used to start a new wallPattern block.  Specifies the name the 
+#   game uses internally to refer to this pattern.
+#
+# material "XXXXX"
+#   the name of the material which is the visual representation of
+#   the pattern
+#
+# subsort "XXXXX"
+#   a string representing a valid catalog UI subsort for wall patterns.
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet
+#   to find the descriptive text for the catalog item
+#
+# notInCatalog
+#   used instead of "#catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+#
+# deprecated
+#   marks the product as one that should be removed/replaced, but references
+#   to which might still be stored in some saved data.
+
+
+version 1
+
+ignoreErrors true
+
+#catalogTextResource build 131
+
+buildTipIndex 25
+

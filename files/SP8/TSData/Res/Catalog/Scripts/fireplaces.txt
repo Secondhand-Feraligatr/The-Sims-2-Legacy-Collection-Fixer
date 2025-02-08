@@ -1,0 +1,50 @@
+# fireplaces.txt -- fence arch products
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# fireplace X
+#   Specifies the ID the game uses internally to refer the fireplace.
+#
+# Mantle "XXXXX"
+#   the name of the object representing a mantle of fireplace
+#
+# ChimneyHearth "XXXXX"
+#   the name of the object representing a hearth
+#
+# ChimneyTop "XXXXX"
+#   the name of the object representing chimney top
+#
+#
+# ChimneyTopFP "XXXXX"
+#   the name of the object representing chimney top
+#
+# ChimneyFoundation "XXXXXXX"
+#   the name of the object that goes on the foundation level
+#
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 310
+
+buildTipIndex 22
+
+# Removed EP6 Mountain fireplace (ID=7).  Next fireplace ID is 8
+
+# fireplace 8
+# mantle "Fireplace - Stove - Romantic"
+# chimneyhearth "Fireplace - Stove - Romantic - Pipe"
+# ChimneyTopFP "Fireplace - Stove - Romantic - Pipe Cap - FP"
+# chimneytop "Fireplace - Stove - Romantic - Pipe Cap"
+# catalogTextIndex 8

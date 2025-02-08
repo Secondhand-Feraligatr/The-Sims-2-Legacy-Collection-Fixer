@@ -1,0 +1,56 @@
+##
+## Permanent animations to be preloaded and stored in memory for the duration of the Sims2 EP1 game
+##   (remove the comment '#' symbol to preload an animation)
+##
+
+
+# Example:
+# preloadAnim "a-turnInPlace-180"
+
+
+# preload all cinematic age transition animations
+preloadAnim "a-cinematic-enterCollege-Streaker"
+preloadAnim "a-cinematic-graduationParty-ageTrans-adult"
+preloadAnim "a-cinematic-graduationParty-streaker"
+preloadAnim "a-cinematic-parent-enterCollegeWithParent-part2"
+preloadAnim "a-cinematic-youngAdult-enterCollege-noParent"
+preloadAnim "a-cinematic-youngAdult-enterCollegeWithParent"
+
+
+# pie menu animations
+preloadAnim "a-expressions-pieMenu-loop-zombieA"
+preloadAnim "a-expressions-pieMenu-loop-zombieB"
+
+
+# gestures
+preloadAnim "a-zombieMoan-locomotion-headOverlay"
+
+
+# preload locomotion animations
+preloadAnim "a-female-walk-youngAdult"
+preloadAnim "a-female-walk-alt1-youngAdult"
+preloadAnim "a-female-walk-zombie"
+preloadAnim "a-female-walk-alt0-zombieBlend"
+preloadAnim "a-female-walkShort-youngAdult"
+preloadAnim "a-female-walkShort-alt1-youngAdult"
+preloadAnim "a-female-walkShort-zombie"
+preloadAnim "a-male-walk-youngAdult"
+preloadAnim "a-male-walk-alt1-youngAdult"
+preloadAnim "a-male-walk-zombie"
+preloadAnim "a-male-walk-alt0-zombieBlend"
+preloadAnim "a-male-walkShort-youngAdult"
+preloadAnim "a-male-walkShort-alt1-youngAdult"
+preloadAnim "a-male-walkShort-zombie"
+preloadAnim "t-female-walk-zombie"
+preloadAnim "t-female-walk-alt0-zombieBlend"
+preloadAnim "t-female-walkShort-zombie"
+preloadAnim "t-male-walk-zombie"
+preloadAnim "t-male-walk-alt0-zombieBlend"
+preloadAnim "t-male-walkShort-zombie"
+
+
+# preload standing idle animations
+preloadAnim "a-idle-zombie-fullbody1"
+preloadAnim "a-idle-zombie-fullbody2"
+preloadAnim "a-idle-zombie-fullbody3"
+preloadAnim "a-zombieMoan-headOverlay"

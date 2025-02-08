@@ -1,0 +1,25 @@
+#
+# Sims2 global startup cheat file - this file is run on 
+# startup of the game application.  It's meant to reflect "production defaults".
+#
+# Do not modify this file locally -- instead create UserData/userStartup.cheat and modify that.
+#
+
+#     alias         real command                                    brief help                        full help
+#     ------------- ----------------------------------------------- --------------------------------- --------------------------------
+alias klapaucius    money                                           "Sims 1.x money cheat"            "Sims 1.x money cheat"
+alias cht           run                                             "See 'help run' for description"  "See 'help run' for description"
+alias exit          hide                                            "Hide the cheat console window"   "Hide the cheat console window"
+alias x             expand                                          "Expand the cheat console window" "Hide the cheat console window"
+alias h             help                                            "Show the cheat help"             "Show the cheat help"
+alias ?             help                                            "Show the cheat help"             "Show the cheat help"
+alias wireframe    "materialParamOverride stdMatFillMode wireframe" "Render in wireframe"             "Render in wireframe"
+alias solid        "materialParamOverride stdMatFillMode -remove"   "Reset wireframe mode"            "Reset wireframe mode"
+
+# This cheat is to ease the transition to logWindow command. 
+#  Alias can only be used after cheats are loaded, and should not be used in LogSettings.cheat files.
+#  Command is deprecated, caller must supply reporter name.
+alias winLogNew	   "logWindow AppLogWindow"			   "Create logWindow AppLogWindow"  	"Create logWindow AppLogWindow" 
+
+# Here until code flip of default propagates.
+boolProp animationTimerIsMaster on

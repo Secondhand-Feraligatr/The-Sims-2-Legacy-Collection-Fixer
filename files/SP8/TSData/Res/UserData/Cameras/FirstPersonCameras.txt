@@ -1,0 +1,108 @@
+
+#-----------------------------------------------------------------------------#
+#                             First Person Cameras                            #
+#-----------------------------------------------------------------------------#
+
+#------------------------------------------------------------------------------
+# The following parameters may be set for first person
+# controllers using the following syntax...
+#
+# setparam <param> <value>
+#
+# <param> is a text name from the following list.
+# <value> is a single floating point value.
+#
+# mouseheadingsensitivity - Scales the mouse heading value to control how sensitive
+#                           the mouse feels in the left right direction.
+#
+# mousepitchsensitivity   - Scales the mouse pitch value to control how sensitive
+#                           the mouse feels in the up down direction.
+#  
+# maxvelocity             - Limits the velocity when moving using up,down,left,right.
+#
+# orientationminchange	  - Sets lerp smallest step possible for changing orientation.
+# orientationsteps        - Sets lerp number of steps to take for changing orientation.
+#
+# translationminchange    - Sets lerp smallest step possible for changing position. 
+# translationsteps        - Sets lerp number of steps to take for changing position.
+#
+# velocityminchange       - Sets lerp smallest step possible for changing velocity. 
+# velocitysteps           - Sets lerp number of steps to take for changing velocity.
+#
+# fovminchange            - Sets lerp smallest step possible for changing FOV. 
+# fovsteps                - Sets lerp number of steps to take for changing FOV.
+#
+# gravity		  - Sets the gravity acceleration when falling.
+#
+# upperpitchlimit         - Limits the pitch to <value> up of forward.
+# lowerpitchlimit         - Limits the pitch to <value> down of forward.
+# headinglimit            - Limits the heading to <value> left/right of forward.
+#
+# mincameraheight	  - min camera height
+# maxcameraheight         - max camera height
+#
+# velocitysensitivitymin  - smallest amount velocity is scaled by at closest zoom. defaults to .25
+#			    or velocity is scaled by this amount to 1, from closest to farthest.
+
+
+#------------------------------------------------------------------------------
+# Free moving first person camera.
+camera     "CameraMan" CameraMan
+fov        (20 25 30 35 40 45 50 55 60 65 70 75 80 85 90)
+clip       0.15 2000
+
+setparam defaultminchange        0.5
+setparam mouseheadingsensitivity 0.0005
+setparam upperpitchlimit         35
+setparam lowerpitchlimit         -80
+setparam orientationminchange	 0.1
+setparam orientationsteps    	 5
+setparam fovminchange		 0.001
+setparam fovsteps		 3
+setparam mincameraheight         1
+setparam maxcameraheight         50
+setparam translationminchange	 0.01
+setparam translationsteps    	 7
+setparam maxvelocity             10
+setparam velocitysensitivitymin  0.1
+setparam velocityminchange	 0.1
+setparam velocitysteps    	 5
+setparam ticklimit               50
+setparam constraintwidth         -10
+
+
+#------------------------------------------------------------------------------
+# Free moving first person camera.
+camera     "CameraManNH" CameraMan
+fov        (20 25 30 35 40 45 50 55 60 65 70 75 80 85 90)
+clip       2 2000
+
+setparam defaultminchange        0.5
+setparam mouseheadingsensitivity 0.0015
+setparam upperpitchlimit         35
+setparam lowerpitchlimit         -80
+setparam maxvelocity             50     
+setparam orientationminchange	 0.1
+setparam orientationsteps    	 5
+setparam translationminchange	 0.01
+setparam translationsteps    	 7
+setparam fovminchange		 0.001
+setparam fovsteps		 3
+setparam mincameraheight         5
+setparam maxcameraheight         500
+setparam velocitysensitivitymin  0.25
+setparam ticklimit               50
+
+
+#------------------------------------------------------------------------------
+# Camera connected to head bone of selected sim.
+camera     "First" First
+fov        (40 50 60 70 80 90 100 110 120)
+clip       0.2 2000
+smoothing  0 8 
+
+setparam defaultminchange        0.5
+setparam mouseheadingsensitivity 0.00005
+setparam mousepitchsensitivity   0.00001
+setparam translationminsteps     1
+setparam translationsteps        1

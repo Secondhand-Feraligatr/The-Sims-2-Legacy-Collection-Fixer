@@ -1,0 +1,31 @@
+# Camera configuration file for the Neighborhood screen.
+# See cameras.txt for a description of syntax.
+
+camera "Neighborhood" Neighborhood
+
+zoom        1 (650 450 230)
+fov            (33  33  33)
+clip           (10  10  10) (2000 2000 2000)
+pitch          (40  32  25)   (40   32   25)
+
+orientation 0 (0 45 90 135 180 225 270 315)
+
+smoothing   5 8
+wheel       5
+
+constrain   .35 .35 .35 .35
+
+setparam defaultminchange                 0.5
+
+setparam keyboardrotationspeed            15
+setparam keyboardrotationlerpsteps        2
+setparam keyboardrotationlerpminchange    0.5
+
+setparam keyboardtranslationspeed         50
+setparam keyboardtranslationlerpsteps     5
+setparam keyboardtranslationlerpminchange 0.5
+
+setparam keyboardzoomspeed                1
+setparam keyboardzoomlerpsteps            1
+setparam keyboardzoomlerpminchange        1
+setparam keyboardzoomscale                3

@@ -1,0 +1,21 @@
+# Camera configuration file for the ContentViewer application.
+# See cameras.txt for a description of syntax.
+
+version 1
+
+# any user preference?
+sinclude "userContentViewerCameras.txt"
+
+camera "MayaController" Maya
+zoom 0 (1)
+clip (0.1) (200)
+
+camera "MouseController" Mouse
+zoom 0 (1)
+clip (0.1) (200)
+
+include "LiveCamera.txt"
+include "BuildCamera.txt"
+include "NeighborhoodCamera.txt"
+include "CineCamCamera.txt"
+ 

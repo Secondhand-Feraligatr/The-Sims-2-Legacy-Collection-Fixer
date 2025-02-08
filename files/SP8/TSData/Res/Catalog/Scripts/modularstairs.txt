@@ -1,0 +1,49 @@
+# modularstairs.txt -- modular stairs
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# modularStairs X
+#   used to start a new block for a modular stairs product.  Specifies 
+#   the integer ID the game uses internally to refer to this product.
+#
+# objectID <objType> 0xHHHHHHHH
+#   specifies one of the component objects of this product.  
+#   objType must be one of: {landing|placeholder|step|topStep|bottomStep} (case-insensitive)
+#   0xHHHHHHHH is a 32-bit hexadecimal number (a "0x" followed by 8 hexdecimal digits)
+#     representing the globally-unique identifier for the selector (or master selector 
+#     for multi-tile objects) for the object occupying this "slot".
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet
+#   to find the descriptive text for the catalog item
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 139
+
+buildTipIndex 8
+
+modularStairs 8
+objectID landing     0x8EBB5644
+objectID placeholder 0x6EBB5643
+objectID step        0x4EBB5641
+objectID topStep     0x0EBB5645
+objectID bottomStep  0xEEBB5642
+catalogTextIndex 9

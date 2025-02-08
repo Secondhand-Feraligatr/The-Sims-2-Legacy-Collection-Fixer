@@ -1,0 +1,95 @@
+# An explicit list of saved property keys.  If the key is listed below 
+#  (and not commented out) then that property key and value are saved to userProps.xml.  
+
+# for versioning the globalProps.xml file
+propertyRevision
+ 
+# for saving the active device and list
+activeDeviceNum
+activeDeviceList
+activeDeviceUseSoftwareRasterizer
+
+# device specific properties, for last active device
+antialiasingQuality
+activeDeviceDisplayMode
+
+# neighborhood properties
+lastLoadedNeighborhood
+visitedNeighborhoods
+visitedNeighborhoodsNoCollege
+visitedNeighborhoodsNoDowntown
+visitedNeighborhoodsNoNeighborhoodForEP1
+visitedNeighborhoodsNoNeighborhoodForEP2
+visitedNeighborhoodsNoNeighborhoodForEP3
+visitedNeighborhoodsNoNeighborhoodForEP4
+visitedNeighborhoodsNoNeighborhoodForEP5
+visitedNeighborhoodsNoNeighborhoodForEP6
+visitedNeighborhoodsNoNeighborhoodForEP7
+visitedNeighborhoodsNoNeighborhoodForEP8
+visitedNeighborhoodsNoNeighborhoodForEP9
+visitedNeighborhoodsNoNeighborhoodForEP10
+ 
+# the graphic option properties
+optionEffectsQuality
+optionLightingQuality
+optionMaterialDetail
+optionObjectDetail
+optionOpaqueUI
+optionReflection
+optionShadows
+optionObjectHiding
+ 
+# web service properties
+autoLogin
+autoLoginInfo
+checkForPatch
+
+# misc properties
+interrupt
+quickTips
+simInBackground
+ShowTutorialWelcome
+allowCustomContent
+lotInfoAdvancedMode
+usePixelAspectRatio
+edithConfigFlags
+copiedShippedDataToUserDataFolder
+copiedUSToUKEnglishNames
+disableCustomObjects
+displayCustomObjectInfo
+
+# lot skirt
+neighborhoodPropFadeDistance
+clickableLotImposters
+optionEnableLotImpostersInLot
+optionEnableNeighborhoodOccupantsInLot
+optionLotSkirtSizeIncrease
+
+
+# camera properties
+autoCentering
+edgeScrolling
+horzedgescrollrate
+vertedgescrollrate
+CameraDriftCamEnabled
+CameraSpecialEventEnabled
+livePIP
+snapshotPictureQuality 
+snapshotPictureSize
+videoCaptureAudioOn
+videoCaptureMaxRecordingSeconds
+videoCaptureQuality
+videoCaptureSize
+rotateCameraSims1Mode
+
+# audio/sound properties
+optionSoundQuality
+SoundMasterGroupAmbienceEnabled
+SoundMasterGroupFXEnabled
+SoundMasterGroupMusicEnabled
+SoundMasterGroupVoxEnabled
+AmbienceVolume 
+FXVolume
+MusicVolume 
+VoxVolume
+SoundOutputMode

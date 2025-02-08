@@ -1,0 +1,62 @@
+# terrainSculptBrushes.txt -- Brushes that can be used to sculpt terrain. 
+#
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# sculptBrush "XXXXX"
+#   used to start a new terrain sculpt brush block.  Specifies the name the 
+#   game uses internally to refer to this brush. 
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet 
+#   to find the descriptive text for the catalog item
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+#
+# profileTextureID
+#    ID of the brush profile texture.
+# 
+# operationName
+#    Specifies the operation to be performed at each vertex as the brush is applied. Choices currently available are:
+#        Raise
+#        Lower
+#        Smoothen
+# 
+# cursorName
+#    Name of the cursor to be used for the brush
+#
+# sculptBrushWidth
+#   Width of the sculpt brush in world units (meters)
+#
+# sculptBrushStrength
+#   Factor governing the strength of the sculpt brush
+
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 128
+
+sculptBrush "Smooth"
+profileTextureID 0x8b96e0cf
+operationName "Smooth"
+cursorName "terrain_dig_cursor"
+sculptBrushWidth 6
+sculptBrushStrength 0.00002
+buildTipIndex 1  # must come before catalogTextIndex
+catalogTextIndex 3
+thumbnailResource 0x499db772 0xe9261352
+

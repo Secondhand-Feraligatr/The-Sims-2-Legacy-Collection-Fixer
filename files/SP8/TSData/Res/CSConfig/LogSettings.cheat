@@ -1,0 +1,165 @@
+#  Log Setting for eCAS
+#     Modified from LogSettings.cheat though I'm just guessing at what we really need
+
+# in lieu of xml support for log config, the cheats use name-value pairs
+#  in many commands this does not mean they are optional, only that the ordering and parameter type is clear
+# this file can only contain logging cheats
+
+# only display warnings and above across all reporters.  
+# Use with caution.  Logging is shutdown when this is NONE.  Default is ALL.
+#logServiceLevel warning
+
+##-------------------------------------------------------------
+# levels
+#   none, error, warning, always, info, debug, all
+
+##-------------------------------------------------------------
+# presets
+
+# setup a custom formatter presets for sims2
+logPreset     Sims2Custom      "%L %G: %M\n%F\n"
+logPreset     Sims2Verbose     "%L %G: %M\n%F\n"
+logPreset     Sims2Simple      "%G: %M\n"
+logPreset     Sims2Timestamp   "%t %G: %M\n"
+logPreset     Sims2MessageOnly "%M\n"
+logPreset     Sims2LoadLog     "%e: %M\n"
+logPreset     Sims2SingleLine  "{%r,%t,%c,%f,%L,%G,%N},\n"
+logPreset     Sims2Track       "%L %G: %M\n%F\n%R\n"
+
+##-------------------------------------------------------------
+# formatters
+
+# override the default formatter presets
+#  The default formatter is cloned into any new reporter which does not define one.
+logFormatter         Default
+logFormatterPreset   Default             Sims2Simple        all  
+logFormatterPreset   Default             Sims2Verbose       warning  
+logFormatterPreset   Default             Sims2Verbose       error  
+
+
+##-------------------------------------------------------------
+# filters and reporters
+
+# set the default filter.  
+#  The default filter is cloned into any new reporter which does not define one.
+#  Try to avoid adding groups to the default because there is no present command to clear them.
+#
+# Reporters are enabled when created.  If a filter and/or formatter has not previously been defined,
+#   They copy the Default filter and formatter to ones of the same name as the reporter.
+#
+#  AnyGroup - pre  group map filter, rejects messages before map test (simpler to disable filter)
+#  NoGroup  - post group map filter, this is the level use if a group level is not found
+#
+logFilter      Default
+logFilterLevel Default AnyGroup all  
+logFilterLevel Default NoGroup  none    
+
+# create a filter for production messages
+logFormatter         ProductionMessages
+logFormatterPreset   ProductionMessages  Sims2Simple        all   
+
+logFilter      ProductionMessages
+logFilterLevel ProductionMessages Production               all            
+logFilterLevel ProductionMessages MaterialManager          warning     
+logFilterLevel ProductionMessages TextureManager           warning   
+logFilterLevel ProductionMessages LightingManager          warning        
+logFilterLevel ProductionMessages EffectsManager           warning        
+logFilterLevel ProductionMessages ConfigurationManager     warning 
+logFilterLevel ProductionMessages ParticleSystemManager    warning  
+logFilterLevel ProductionMessages TSObjectFolder           warning       
+logFilterLevel ProductionMessages CommandParser            error    
+logFilterLevel ProductionMessages LotImposterManager       warning
+logFile        ProductionMessages ProductionMessages.txt
+logReporterProp ProductionMessages -formatter ProductionMessages -filter ProductionMessages
+
+# set up a resources log - this is only acitve when RESMAN_PROFILE is defined in GZPersist
+logFilter       Resources
+logFilterLevel  Resources ResourceProfile all 
+logFile         Resources resources.txt 
+logReporterProp Resources -formatter ProductionMessages -filter Resources
+
+##-------
+# AppConsole, AppDebugger, and AppTitleBar reporters are defined in the code prior to config file executing
+#  these cannot be created, but can be controlled
+#
+logFormatter         AppConsole   
+logFormatterPreset   AppConsole          Sims2Simple        all   
+logFormatterPreset   AppConsole          Sims2Verbose       warning
+logFormatterPreset   AppConsole          Sims2Verbose       error
+
+logFilter       AppConsole
+logFilterLevel	AppConsole NoGroup   always 
+logReporterProp AppConsole -formatter AppConsole -filter AppConsole
+
+##-------
+# AppDebugger
+logFormatter         AppDebugger   
+logFormatterPreset   AppDebugger         Sims2Simple        all
+logFormatterPreset   AppDebugger         Sims2Verbose       warning
+logFormatterPreset   AppDebugger         Sims2Verbose       error
+
+logFilter	AppDebugger
+logFilterLevel	AppDebugger NoGroup   always 
+logFilterLevel	AppDebugger Sims2Load warning
+logReporterProp AppDebugger -formatter AppDebugger -filter AppDebugger
+logReporterProp AppDebugger -enabled true
+
+##-------
+# AppTitleBar
+logFormatter         AppTitleBar   
+logFormatterPreset   AppTitleBar         Sims2MessageOnly   all  
+
+logFilter       AppTitleBar
+logFilterLevel	AppLoadLog  NoGroup   none 
+logFilterLevel  AppTitleBar Sims2Load info 
+logReporterProp AppTitleBar -formatter AppTitleBar -filter AppTitleBar 
+# make the title bar synchronous 
+#  (only synchronous for messages logged from main UI thread, but that is nearly all of them)
+logReporterProp AppTitleBar -synch true
+# this needs to be turned off by default because it clobbers the localized title bar name
+# logReporterProp AppTitleBar -enabled false
+
+##-------
+# Log files are saved into the log output directory, currently same directory as .exe.
+# Load log records loading messages and times.
+logFormatter         AppLoadLog   
+logFormatterPreset   AppLoadLog          Sims2LoadLog       all   
+
+logFilter       AppLoadLog
+logFilterLevel	AppLoadLog  NoGroup   none 
+logFilterLevel  AppLoadLog  Sims2Load info  
+logFile         AppLoadLog  loadLog.txt
+logReporterProp AppLoadLog -formatter AppLoadLog  -filter AppLoadLog 
+# load log is off by default, it is enabled by specifying -loadLog from the command line
+logReporterProp AppLoadLog -enabled false 
+
+##-------
+# Log graphics specific info
+logPreset            GraphicsLogPreset   "%L %N\n"
+logFormatter         GraphicsLog   
+logFormatterPreset   GraphicsLog         GraphicsLogPreset        all   
+
+logFilter       GraphicsLog
+logFilterLevel  GraphicsLog NoGroup   none 
+logFilterLevel  GraphicsLog GfxDevice info  
+logFile         GraphicsLog GraphicsLog.txt
+logReporterProp GraphicsLog -formatter GraphicsLog -filter GraphicsLog
+logReporterProp GraphicsLog -enabled false 
+
+
+##-------------------------------------------------------------
+# dump out texture/shader/material related errors to a file
+#
+LogFormatter       TextureErrors
+LogFormatterPreset TextureErrors Sims2SingleLine all
+
+LogFilter      TextureErrors
+LogFilterLevel TextureErrors TextureManager       warning
+LogFilterLevel TextureErrors "Shader validation"  warning 
+LogFilterLevel TextureErrors MaterialParser       warning
+LogFilterLevel TextureErrors MaterialManager      warning
+
+LogFile        TextureErrors TextureErrors.log
+
+
+

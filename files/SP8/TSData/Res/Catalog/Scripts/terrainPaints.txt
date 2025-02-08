@@ -1,0 +1,56 @@
+# terrainPaints.txt -- Paints that can be applied on to the terrain surface.
+#
+# Syntax Summary
+#
+# catalogTextResource XXXX X
+#   the name of the IFF file and the index of the stringset
+#   within that file holding the strings to use for catalog 
+#   descriptions and related metadata.
+#
+# buildTipIndex x
+#   the index of the string in the build tip stringset
+#   that contains the build/decorating tip text that will be
+#   appended to the catalog description of the following entries.
+#
+# terrainPaint "XXXXX"
+#   used to start a new terrain paint block.  Specifies the name the 
+#   game uses internally to refer to this paint. It is currently assumed that
+#   the texture corresponding to this paint has the same name.
+#
+# catalogTextIndex X
+#   this informs the catalog at what index in the catalogTextStringSet 
+#   to find the descriptive text for the catalog item
+#
+# notInCatalog
+#   used instead of "catalogTextIndex X" to designate this item should 
+#   not appear in the catalog UI
+#
+# brushWidth
+#   Width of the paint brush in world units (meters)
+#
+# isWildSurfaceType
+#   This is an optional command. Add it under only those paints that should be marked as having the "wild surface property".
+#   Only paints marked with that property will be chosen as candidates to serve as terrain canvas.
+#
+# terrainTypeSoundSuffix "XXXXX"
+#   Sets the name that will be appended to audio events when modified for terrain type.
+
+version 1
+
+ignoreErrors true
+
+catalogTextResource build 142
+
+buildTipIndex 21
+
+## Lot-level paints corresponding to neighborhood level paints
+
+terrainPaint "lottexture-concrete-01"
+brushWidth 3
+notInCatalog
+terrainTypeSoundSuffix "grass"
+
+terrainPaint "lottexture-canvas-dirt"
+brushWidth 3
+notInCatalog
+terrainTypeSoundSuffix "grass"
