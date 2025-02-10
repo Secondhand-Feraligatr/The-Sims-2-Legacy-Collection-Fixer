@@ -19,7 +19,7 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 - Changes the title screen music and loading text to be the ones from base game.
 
-- Installs [dgVoodoo2](https://github.com/dege-diosg/dgVoodoo2) and [dxvk](https://github.com/doitsujin/dxvk) to improve compatiblity and performance. 
+- Installs [dxvk](https://github.com/doitsujin/dxvk) to improve compatiblity and performance. 
 
 - Installs the 'TS2-Extender' created by [Lazy Duchess](https://www.tumblr.com/lazyduchess).
 
