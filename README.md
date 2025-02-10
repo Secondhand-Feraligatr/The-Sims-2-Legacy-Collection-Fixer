@@ -25,7 +25,7 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 **Important Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.30**) **may be out of date**.
 
-> **Check what the latest version is here:** [TS2 Extender](https://github.com/LazyDuchess/TS2-Extender)
+> **Check what the latest version is here:** [TS2 Extender](https://github.com/LazyDuchess/TS2-Extender/releases)
 
 ---
 
