@@ -6,11 +6,6 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 ---
 
-##  **Download**
-[Latest Release](https://github.com/Secondhand-Feraligatr/The-Sims-2-Legacy-Collection-Fixer/releases)
-
----
-
 ## **Fixes & Improvements**
 - Installs the IKEA Stuff Pack.
 
