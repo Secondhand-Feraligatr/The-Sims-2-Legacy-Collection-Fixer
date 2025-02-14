@@ -15,7 +15,7 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 - Sets all of the 'Objects.package' files to read only so you can't corrupt them.
 
-- Changes the menus so they just say 'The Sims™ 2'.
+- Changes the menus to say 'The Sims™ 2'.
 
 - Changes the title screen music and loading text to be the ones from base game.
 
