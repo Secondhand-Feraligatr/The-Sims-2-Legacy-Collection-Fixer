@@ -55,7 +55,7 @@ This is all stuff that isn't included in this program, but I highly recommend yo
 
 - [Sims2Pack Clean Installer](https://modthesims.info/d/409950/sims2pack-clean-installer-v1-6-22-updated-aug-2-2014.html) - Legacy Collection doesn't include the Maxis program needed to install 'Sims2Pack' files, so you can use this Mootilda program instead.
 
-- [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - FIxes an issue where the text is smaller than it should be.
+- [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - Fixes an issue where the text is smaller than it should be.
 
 - [Maxis-Match Widescreen CAS Fix](https://modthesims.info/d/681743/maxis-match-widescreen-cas-fix.html) - FIxes an issue where the CAS UI covers your sim when playing on a modern resolution.
 
