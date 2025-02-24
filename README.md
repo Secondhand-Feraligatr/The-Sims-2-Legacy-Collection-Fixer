@@ -53,7 +53,7 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 ## **Recommended Mods & Programs**
 
-This is all stuff that isn't included in this program, but I highly recommend you go install.
+These are all mods and programs that aren't't included with this program, but I highly recommend you go install.
 
 - [Sims2Pack Clean Installer](https://modthesims.info/d/409950/sims2pack-clean-installer-v1-6-22-updated-aug-2-2014.html) - Legacy Collection doesn't include the Maxis program needed to install 'Sims2Pack' files, so you can use this Mootilda program instead.
 
