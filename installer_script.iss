@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "The Sims 2 Legacy Collection Fixer"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "SecondhandFeraligatr / CroconawSims"
 #define MyAppURL "https://modthesims.info/member.php?u=10269790"
 
@@ -19,12 +19,13 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={commonpf}\The Sims 2 Legacy Collection
 Uninstallable=no
+CreateUninstallRegKey=no
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 ;PrivilegesRequired=lowest
 OutputBaseFilename=mysetup
-SetupIconFile=C:\Users\Zachary.Kraus\Documents\GitHub\sss\job_H5Q_icon-1.ico
+SetupIconFile=C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\job_H5Q_icon-1.ico
 SolidCompression=yes
 WizardStyle=modern
 
@@ -32,20 +33,18 @@ WizardStyle=modern
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\Base\TSData\Res\Catalog\Bins\*"; DestDir: "{app}\Base\TSData\Res\Catalog\Bins"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\Base\TSData\Res\Catalog\Skins\*"; DestDir: "{app}\Base\TSData\Res\Catalog\Skins"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP1\TSData\Res\Sound\*"; DestDir: "{app}\EP1\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP3\TSData\Res\Sound\*"; DestDir: "{app}\EP3\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP6\TSData\Res\Sound\*"; DestDir: "{app}\EP6\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP7\TSData\Res\Sound\*"; DestDir: "{app}\EP7\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP8\TSData\Res\Sound\*"; DestDir: "{app}\EP8\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP9\TSData\Res\Sound\*"; DestDir: "{app}\EP9\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP9\TSData\Res\Text\*"; DestDir: "{app}\EP9\TSData\Res\Text"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\EP9\TSBin\*"; DestDir: "{app}\EP9\TSBin"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\SP5\TSData\Res\Sound\*"; DestDir: "{app}\SP5\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\SP6\TSData\Res\Sound\*"; DestDir: "{app}\SP6\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\SP7\TSData\Res\Sound\*"; DestDir: "{app}\SP7\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
-Source: "C:\Users\Zachary.Kraus\Documents\GitHub\sss\files\SP8\*"; DestDir: "{app}\SP8"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\Base\TSData\Res\Catalog\Bins\*"; DestDir: "{app}\Base\TSData\Res\Catalog\Bins"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\Base\TSData\Res\Catalog\Skins\*"; DestDir: "{app}\Base\TSData\Res\Catalog\Skins"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP1\TSData\Res\Sound\*"; DestDir: "{app}\EP1\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP6\TSData\Res\Sound\*"; DestDir: "{app}\EP6\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP8\TSData\Res\Sound\*"; DestDir: "{app}\EP8\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP9\TSData\Res\Sound\*"; DestDir: "{app}\EP9\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP9\TSData\Res\Text\*"; DestDir: "{app}\EP9\TSData\Res\Text"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\EP9\TSBin\*"; DestDir: "{app}\EP9\TSBin"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\SP5\TSData\Res\Sound\*"; DestDir: "{app}\SP5\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\SP6\TSData\Res\Sound\*"; DestDir: "{app}\SP6\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\SP7\TSData\Res\Sound\*"; DestDir: "{app}\SP7\TSData\Res\Sound"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
+Source: "C:\Users\Zachary.Kraus\Documents\GitHub\Fixer\files\SP8\*"; DestDir: "{app}\SP8"; Flags: ignoreversion recursesubdirs uninsneveruninstall replacesameversion uninsrestartdelete
 
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -131,4 +130,3 @@ begin
     // Add more files as needed
   end;
 end;
-
