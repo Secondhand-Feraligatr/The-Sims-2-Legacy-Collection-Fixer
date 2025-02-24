@@ -21,6 +21,8 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
 
 - Installs [dgVoodoo2](https://github.com/dege-diosg/dgVoodoo2) and [dxvk](https://github.com/doitsujin/dxvk) to improve compatiblity and performance. 
 
+- Installs The Sims 2 Store and pre-order bonus exclusive items.
+
 - Installs the 'TS2-Extender' created by [Lazy Duchess](https://www.tumblr.com/lazyduchess).
 
 **Important Notice:** TS2-Extender is still a **work in progress**, and thus the version included in The Sims 2 Legacy Collection Fixer (**0.31**) **may be out of date**.
@@ -46,7 +48,7 @@ The **Sims 2 Legacy Collection Fixer** fixes some of the issues with The Sims™
  - TS2-Extender auto skips the intro and makes the game launch in borderless mode. You can change this by editing the 'TS2Extender.ini' located in TSBin in the EP9 folder.
 
  - I am aware of how you are not meant to use dgVoodoo2 and dxvk at the same time, but in my testing it just works. I've tried it on 2 different computers and I have found that dgVoodoo2 does improve performance while dxvk fixes an issue caused by dgVoodoo2 where family thumbnails are broken. I have not experienced any issues in my testing. If you do experience issues after installing this then please let me know.
-
+   
 ---
 
 ## **Recommended Mods & Programs**
@@ -57,7 +59,7 @@ This is all stuff that isn't included in this program, but I highly recommend yo
 
 - [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - Fixes an issue where the text is smaller than it should be.
 
-- [Maxis-Match Widescreen CAS Fix](https://modthesims.info/d/681743/maxis-match-widescreen-cas-fix.html) - FIxes an issue where the CAS UI covers your sim when playing on a modern resolution.
+- [TS2 Store Edition UI Icon Restored for Any Game Setup](https://modthesims.info/d/650961/ts2-store-edition-ui-icon-restored-for-any-game-setup.html) - FIxes an issue where the store CAS items are missing the store icon.
 
 - [HoodChecker](https://modthesims.info/d/456523) - Detects and fixes issues with your neighborhoods.
 
