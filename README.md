@@ -59,7 +59,7 @@ This is all stuff that isn't included in this program, but I highly recommend yo
 
 - [UI Text Fonts Fix for AL/MG](https://modthesims.info/d/563540) - Fixes an issue where the text is smaller than it should be.
 
-- [TS2 Store Edition UI Icon Restored for Any Game Setup](https://modthesims.info/d/650961/ts2-store-edition-ui-icon-restored-for-any-game-setup.html) - FIxes an issue where the store CAS items are missing the store icon.
+- [TS2 Store Edition UI Icon Restored for Any Game Setup](https://modthesims.info/d/650961/ts2-store-edition-ui-icon-restored-for-any-game-setup.html) - FIxes an issue where The Sims 2 Store CAS items are missing the store icon.
 
 - [HoodChecker](https://modthesims.info/d/456523) - Detects and fixes issues with your neighborhoods.
 
